@@ -1,0 +1,284 @@
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+
+.header-section {
+  position: relative;
+  top: -110px; /* Adjust this value to move the section up or down */
+}
+
+html, body{
+  position: relative;
+  background-color: #F2EEE3;
+  overflow-x: auto;
+}
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+/*IMAGE AND BUTTON STYLES*/
+
+.highlight {
+  display: inline-block;
+  padding: 1px 6px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Box background color */
+  border: 1.5px solid #ccc; /* Box border */
+  margin: 2px;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  justify-content: center;
+  color: black;
+  line-height: auto;
+  text-align: center;
+}
+
+.highlight:hover {
+  background-color: #D6B464; /* Change background color on hover */
+  cursor: pointer;
+}
+
+.highlight:active {
+  background-color: #D6B464;
+}
+
+.highlight.active {
+  background-color: #D6B464;
+}
+
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: -3px;
+}
+.circle-image {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image a circle */
+  overflow: hidden; /* Ensures the image stays within the circle */
+  display: inline-block; /* Use inline-block to ensure proper display */
+  vertical-align: middle; /* Align the circle images vertically in the middle */
+  margin-right: 8px;
+}
+
+.circle-image#button {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image a circle */
+  margin-right: 2px;
+  filter: grayscale(0%);
+}
+
+.circle-image#wrong {
+  background-color: rgb(179, 61, 61);
+}
+
+.circle-image#right {
+  background-color: rgb(62, 157, 62);
+
+}
+
+
+.circle-image img {
+  filter: grayscale(100%);
+  opacity: 50%;
+  width: 120%; /* Ensures the image takes up the entire circle */
+  height: 120%; /* Maintains aspect ratio */
+  vertical-align: middle; /* Align the circle images vertically in the middle */
+  margin-bottom: 10px;
+  margin-right: 20px; /* Move the image to the left within the frame */
+}
+
+
+/*BRACKET STYLES*/
+.full-bracket {
+  overflow-y: visible;
+  margin-bottom: 200px;
+  margin-top: -270px;
+  margin-left: 1.7%; /* Auto left margin to center */
+  margin-right: 0px; /* Auto right margin to center */
+}
+
+.bracket-container {
+  display: flex;
+  height: 100%;
+  justify-content: left; /* Center items horizontally */
+  overflow-y: visible;
+  max-width: 98%; /* Adjust max-width as needed */
+  align-items: center; /* Center items vertically */
+  text-align: center; /* Optional: Center text inside items */
+}
+
+
+.bracket-container#finals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%; /* Adjust width as needed */
+  height: 160px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 16%;
+}
+
+.circle-container#finals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+
+
+.bracket-level{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  overflow-y: visible;
+
+}
+
+.bracket-level#final-4 {
+  margin-top: 1.1em;
+}
+
+.bracket-matchup{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  width: 140px;
+}
+
+.bracket-matchup#middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 5px;
+  width: 300px;
+  height: 220px;
+}
+
+.bracket-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center; /* Center items vertically */
+}
+
+.bracket-team{
+  height: 70px;
+  width: 100%;
+  background-color: #F5F5F5;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  display: row;
+  text-align: left;
+}
+
+.bracket-name{
+  font-family: 'Libre Franklin', sans-serif;
+  width: 100%;
+  font-size: .75em;
+  margin-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #2B2B2B;
+  text-align: left;
+}
+
+.bracket-name#finals{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.bracket-name#right{
+  margin-right: 4px;
+  text-align: right;
+}
+
+.bracket-score{
+  font-family: 'Libre Franklin', sans-serif;
+  width: 50%;
+  font-size: .75em;
+  margin: 5px;
+  line-height: 1.5em;
+  overflow: hidden;
+  color: #2B2B2B;
+  text-align: right;
+}
+
+.bracket-score#right{
+  margin-left: 4px;
+  text-align: left;
+}
+
+.winner>.bracket-name, .winner>.bracket-score{
+  font-weight: bold;
+  color: #D6B464;
+}
+
+.footer-logo {
+  max-width: 50px; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Remove extra space below the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Optional: Add some space around the image */
+.container {
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+footer .col-md-3 {
+  margin-bottom: 20px; /* Adjust the value for the desired space */
+}
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+/*@media (min-width: 576px) { 
+    
+} */
+
+@media (max-width: 1000px) {
+
+  .bracket-matchup {
+    width: 85px;
+  }
+
+  .bracket-matchup#middle {
+    width: 85px;
+  }
+  
+  .circle-image {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 5px;
+
+  }
+}
