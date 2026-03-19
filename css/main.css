@@ -138,7 +138,7 @@ h7 { /* footer2 */
     color: #D6B464;
 }
 
-h8 { /* footer2 */
+.nav-subtitle { /* nav subtitle */
     font-family: 'Georgia', serif;
     font-weight: 700;
     font-size: 20px;
@@ -301,7 +301,7 @@ li.logo img {
     width: 50px;
     padding-right: 5px;
 }
-li.logo span {
+li.logo span:not(.nav-subtitle) {
     display: none;
     -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
     transition: 1s;

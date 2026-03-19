@@ -19,7 +19,7 @@ html, body{
   position: relative;
   background-color: #F2EEE3;
   overflow-y: auto;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 /*IMAGE AND BUTTON STYLES*/
@@ -213,7 +213,7 @@ html, body{
   text-align: left;
 }
 
-.winner>.bracket-name, .winner>.bracket-score .winner>.bracket-text{
+.winner>.bracket-name, .winner>.bracket-score, .winner>.bracket-text{
   font-weight: bold;
   color: #D6B464;
 }
