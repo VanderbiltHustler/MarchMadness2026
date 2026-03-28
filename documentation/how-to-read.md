@@ -6,7 +6,10 @@ Colors/Boldness:
 - Green highlight means the staff member guessed that team winning correctly
 - Red highlight means the staff member guessed that team winning incorrectly
 
-How to read:
+~~How to read:~~ (DISREGARD BELOW)
 
 - Each green and bold entry results in a tangible result in the next round
-  - Any other combination (red, red + gold) results in the result being blank in the next round (since the prediction ends there)
+  - A tangible result means the green/bold team will have some sort of indicator in the next round (red, green, bold)
+  - Any other combination (red, red + gold) means the result will blank in the next round (since the prediction ends there)
+
+(problem: green/bold will result in blank deco cell if that particiular team was predicted to lose the next round)
